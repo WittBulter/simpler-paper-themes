@@ -12,6 +12,8 @@ If you want to browse the topic list，see []() plz.
 
 2. install dependencies: `npm i`
 
-3. run example: `npm run theme {dir_name}`
+3. run example(default port: 4001): `npm run server {dir_name}`
+
+4. build: `npm run build {dir_name}`
 
 
