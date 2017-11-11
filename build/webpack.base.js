@@ -27,14 +27,14 @@ const findOneModules = async(dir) => {
     console.log(`\n${exPath} is not found`)
     return process.exit(1)
   }
-  return [{ name: exPath, path: `${exPath}/index.scss` }]
+  return [{ name: dir, path: `${exPath}/index.scss` }]
 }
 
 module.exports = (async() => {
   const dirName = process.env.npm_config_dir || undefined
   const entrys = dirName === 'all' ? await findAllModules() : await findOneModules(dirName)
   const entryMap = entrys.reduce((pre, next) => Object.assign(pre, { [next.name]: next.path }), {})
-  
+  console.log(entryMap)
   return {
     entry: entryMap,
   
