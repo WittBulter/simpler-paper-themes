@@ -13,4 +13,4 @@ install:
   - npm i
 
 script:
-  - npm run build --dir=default
+  - npm run build --dir=all
