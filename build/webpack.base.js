@@ -8,7 +8,7 @@ module.exports = (async() => {
   const dirName = process.env.npm_config_dir || undefined
   const exPath = path.resolve(__dirname, `../themes/${dirName}`)
   if (!await exists(exPath)) {
-    console.log('\ndir is not found!\ntry run [npm run theme --dir={dir_name}]')
+    console.log('\ndir is not found!\ntry run [npm run server --dir={dir_name}]')
     return process.exit(1)
   }
   if (!await exists(`${exPath}/index.scss`)) {
