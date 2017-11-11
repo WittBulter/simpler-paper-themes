@@ -8,12 +8,17 @@ If you want to browse the topic list，see []() plz.
 
 ### Development
 
-1. fork and clone
+- lift server:
 
-2. install dependencies: `npm i`
+  1. fork and clone
 
-3. run example(default port: 4001): `npm run server {dir_name}`
+  2. install dependencies: `npm i`
 
-4. build: `npm run build {dir_name}`
+  3. run example(default port: 4001): `npm run server --dir={dir_name}`
+
+
+- build all modules:
+
+  1. run  `npm run build --dir=all`
 
 
