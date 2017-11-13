@@ -4,7 +4,7 @@
   "description": "this rep generates themes for Simpler Paper",
   "main": "index.js",
   "scripts": {
-    "server": "webpack-dev-server --config ./build/webpack.dev.js --progress --watch --port 4001",
+    "start": "webpack-dev-server --config ./build/webpack.dev.js --progress --watch --port 4001",
     "build": "rm -rf ./dist && webpack --config ./build/webpack.prod.js --progress"
   },
   "repository": {

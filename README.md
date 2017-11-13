@@ -14,7 +14,7 @@ If you want to browse the topic list，see []() plz.
 
   2. install dependencies: `npm i`
 
-  3. run example(default port: 4001): `npm run server --dir={dir_name}`
+  3. run example(default port: 4001): `npm start --dir={dir_name}`
 
 
 - build all modules:
