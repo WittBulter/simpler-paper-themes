@@ -71,23 +71,39 @@ button, input, select, textarea {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    padding-left: 15px;
-    padding-top: 40px; }
+    padding: 10px 0 10px 15px; }
+  #side .side-title {
+    width: 100%;
+    height: 52px;
+    text-align: left;
+    border-bottom: 1px solid #d8d8d8; }
+    #side .side-title h2 {
+      margin: 0;
+      line-height: 52px;
+      font-size: 16px;
+      font-weight: 300;
+      color: #333;
+      padding-left: 15px; }
 
 .chapter {
-  font-size: 15px;
-  line-height: 40px;
+  font-size: 16px;
+  line-height: 37px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
-  .chapter.link {
-    color: #999; }
-  .chapter.dir {
-    font-size: 18px; }
-    .chapter.dir a {
-      color: #666; }
+  user-select: none;
+  font-weight: 400; }
+  .chapter.link a {
+    color: #404040; }
+  .chapter.dir a {
+    color: #929292; }
+  .chapter.active a {
+    color: #4078c0; }
+  .chapter a {
+    width: 100%;
+    height: 100%;
+    display: block; }
 
 .container-position {
   position: absolute;
@@ -100,6 +116,7 @@ button, input, select, textarea {
 #container {
   width: 100%;
   left: 250px;
+  height: 100vh;
   position: static;
   overflow-y: auto; }
 
@@ -107,7 +124,7 @@ button, input, select, textarea {
   max-width: 900px;
   min-height: 100%;
   margin: 0 auto;
-  padding: 10px 20px; }
+  padding: 10px 20px 80px; }
 
 .sub-list {
   padding: 0;
@@ -144,5 +161,29 @@ button, input, select, textarea {
     #container pre > code {
       background: transparent;
       border: 0; }
+
+.back-to-top {
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #999;
+  color: #f3f3f3;
+  font-size: 14px;
+  text-align: center;
+  line-height: 50px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer; }
+  .back-to-top.show {
+    opacity: 1;
+    visibility: visible; }
 
 /*# sourceMappingURL=default.css.map*/
