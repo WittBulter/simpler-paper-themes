@@ -34,7 +34,7 @@ module.exports = (async() => {
   const dirName = process.env.npm_config_dir || undefined
   const entrys = dirName === 'all' ? await findAllModules() : await findOneModules(dirName)
   const entryMap = entrys.reduce((pre, next) => Object.assign(pre, { [next.name]: next.path }), {})
-  console.log(entryMap)
+
   return {
     entry: entryMap,
   
@@ -70,7 +70,10 @@ module.exports = (async() => {
           loader: ExtractTextPlugin.extract({
             fallback: 'style-loader',
             use: [
-              'css-loader',
+              {
+                loader: 'css-loader',
+                options:{ minimize: true },
+              },
               'sass-loader',
             ],
           }),
