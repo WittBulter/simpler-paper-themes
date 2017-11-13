@@ -76,7 +76,6 @@ module.exports = (async() => {
               },
               'sass-loader',
             ],
-            
           }),
         },
       ],
