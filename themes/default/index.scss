@@ -151,6 +151,16 @@
 
   ol {
     padding-left: 15px;
+    margin: 15px 0 15px 15px;
+
+    li {
+      line-height: 1.4;
+      list-style: unset;
+
+      p {
+        margin: 15px 0;
+      }
+    }
   }
 
   pre {
