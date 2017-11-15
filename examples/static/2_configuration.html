@@ -1,0 +1,41 @@
+<h1 id="configuration">Configuration</h1>
+<h2 id="step-1-add-paper-config-json">Step 1. add paper.config.json</h2>
+<blockquote>
+<p>you can create a json file in the document directory. </p>
+</blockquote>
+<p>Example: </p>
+<pre><code class="lang-html">
+-------------   project dir
+|--- build
+|--- dist
+|--- scripts
+|--- docs
+|    |--- quickstart.md
+|    |--- hello.md
+|    |--- paper.config.json   (add paper.config.json in doc dir)
+...
+</code></pre>
+<h2 id="step-2-improve-the-configuration-file">Step 2. improve the configuration file</h2>
+<pre><code class="lang-json">{
+  // document the alias, the value will be displayed after compilation, default: null
+  &quot;alias&quot;: {
+    &quot;quickstart&quot;: &quot;Getting Started&quot;
+    //...
+  },
+
+  // document title, default: &quot;simpler paper&quot;
+  &quot;title&quot;: &quot;&quot;,
+
+  // generate mini maps on the right side of each document, default: true
+  &quot;minimap&quot;: true,
+
+  // back to top button, default: true
+  &quot;backToTop&quot;: true,
+
+  // document page path, default: &quot;/&quot;
+  &quot;docPath&quot;: &quot;/&quot;,
+
+  // loading indicator, default: true
+  &quot;indicator&quot;: true
+}
+</code></pre>
