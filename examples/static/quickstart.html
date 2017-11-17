@@ -1,25 +1,43 @@
 <h1 id="quickstart">QuickStart</h1>
 <p>Simpler Paper is a very simple and easy to use the document generator.  </p>
 <p>you only need to run a command, All of the Markdown will be automatically integrated into the site. </p>
-<h2 id="step-1-install">Step 1. Install</h2>
-<p>run <code>npm install -g simpler-paper</code>  </p>
+<h2 id="step-1-init">Step 1. Init</h2>
+<pre><code class="lang-bash"># install 
+npm install -g simpler-paper  
+
+# init  
+paper i
+</code></pre>
 <h2 id="step-2-build">Step 2. Build</h2>
+<blockquote>
+<p>Don&#39;t forget to add some markdown files.  </p>
+</blockquote>
+<p>Example:</p>
+<pre><code class="lang-html">
+-------------   project dir
+|--- build
+|--- dist
+|--- scripts
+|--- docs    ==============     document directory
+|    |--- quickstart.md
+|    |--- hello.md
+|    |--- paper.config.json
+...
+</code></pre>
 <p>just run: </p>
-<pre><code class="lang-bash"># in the project directory run &quot;paper build {dir}&quot;
-# ex:
-paper build ./docs
+<pre><code class="lang-bash"># build to html
+paper build  
+
+# preview  
+paper s
 </code></pre>
-<h2 id="step-3-preview">Step 3. Preview</h2>
-<p>If you want to see the document page immediately, run:  </p>
-<pre><code class="lang-bash">paper server
-</code></pre>
-<h2 id="step-4-deploy">Step 4. Deploy</h2>
+<h2 id="step-3-deploy">Step 3. Deploy</h2>
 <blockquote>
 <p>In default, the document will be released to github.    </p>
 </blockquote>
 <pre><code class="lang-bash">paper deploy
 </code></pre>
-<h2 id="step-5-set-github-pages">Step 5. Set github pages</h2>
+<h3 id="other-set-github-pages">Other. Set github pages</h3>
 <ol>
 <li>go to your rep.</li>
 <li>Settings &gt; Options &gt; GitHub Pages  </li>
