@@ -1,7 +1,7 @@
 ## simpler-paper-themes
 
 this rep generates themes for [Simpler Paper](https://github.com/DhyanaChina/simpler-paper).
-If you want to browse the topic list，see []() plz.
+If you want to browse the topic list，see [theme-list](https://wittbulter.github.io/simpler-paper/#/theme.md) plz.
 
 > you can contribute style files here.
 
