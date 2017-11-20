@@ -45,6 +45,43 @@ code {
   font-size: 85%;
 }
 
+table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  margin: 10px 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  word-wrap: break-word;
+  line-height: 1.6;
+
+  tr {
+    background-color: #fff;
+    border-top: 1px solid #dadada;
+
+    &:nth-child(2n) {
+      background-color: #FAFAFA;
+    }
+    th, td {
+      padding: 6px 12px;
+      border-right: 1px solid #dadada;
+      border-bottom: 1px solid #dadada;
+      text-align: left;
+      vertical-align: top;
+
+      &:first-child {
+        border-left: 1px solid #dadada;
+      }
+    }
+    th {
+      font-weight: 600;
+    }
+    td {
+      color: #5a5e66;
+    }
+  }
+}
+
 button, input, select, textarea {
   font-family: inherit;
   font-size: inherit;
