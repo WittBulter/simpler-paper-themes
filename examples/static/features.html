@@ -1,0 +1,41 @@
+<h2 id="features">Features</h2>
+<h3 id="multilayer-menu">Multilayer menu</h3>
+<p>If you want to create a menu that contains parent-child relationships, you just need to create folders.
+simpler-paper automatically generate menus based on hierarchical relationships.  </p>
+<p><strong>Example</strong>  </p>
+<p>source:</p>
+<pre><code class="lang-html">|____docs
+| |____install
+| | |____install.1.md
+| | |____install.2.md
+| |____problems
+| | |____answer.1.md
+| | |____answer.2.md
+| |____paper.config.json
+</code></pre>
+<p>target:  </p>
+<p><img src="http://static.wittsay.cc/simpler-paper-examples-1.png?imageView2/2/w/850/h/300/" alt="example1"></p>
+<h3 id="sort">Sort</h3>
+<p>Both files and folders support manually specifying weights, you just need to add a prefix to them.<br>Prefixes are automatically removed after compilation.  </p>
+<p><strong>Example</strong><br>source:  </p>
+<pre><code class="lang-html">|____docs
+| |____install
+| | |____9_install.1.md
+| | |____5_install.2.md
+| |____problems
+| | |____answer.1.md
+| | |____answer.2.md
+| |____paper.config.json
+</code></pre>
+<p>target:<br><img src="http://static.wittsay.cc/simpler-paper-examples-2.png?imageView2/2/w/850/h/300/" alt="example2">  </p>
+<h3 id="code-highlighting">Code highlighting</h3>
+<p>Adding <code>highlight.js</code> files and <code>highlight.css</code> files will automatically open the code highlighting<br>You can download and download these files here: <a href="https://highlightjs.org/download/">highlightjs</a></p>
+<pre><code class="lang-html">|____docs
+| |____paper.config.json
+| |____3_theme.md
+| |____4_features.md
+| |____1_quickstart.md
+| |____2_configuration.md
+| |____highlight.css
+| |____highlight.js
+</code></pre>
