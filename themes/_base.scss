@@ -45,6 +45,18 @@ code {
   font-size: 85%;
 }
 
+pre {
+  display: block;
+  background: #F7F7F7;
+  padding: 15px 10px;
+
+  > code {
+    background: transparent;
+    border: 0;
+    display: block;
+  }
+}
+
 table {
   display: block;
   width: 100%;
