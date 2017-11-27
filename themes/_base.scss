@@ -118,36 +118,36 @@ button, input, select, textarea {
   height: 100vh;
 }
 h4, h5, h6, p {
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
-#container {
+.container-position {
   h1 {
-    font-size: 30px;
-    margin: 38px 0 25px;
+    font-size: 27px;
+    margin: 29px 0 20px;
     line-height: 2;
     border-bottom: 1px solid #e8ebef;
   }
   h2 {
-    font-size: 27px;
-    margin: 35px 0 23px;
+    font-size: 25px;
+    margin: 26px 0 20px;
     line-height: 1.9;
     border-bottom: 1px solid #e8ebef;
   }
   h3 {
-    font-size: 24px;
-    margin: 32px 0 21px;
+    font-size: 23px;
+    margin: 24px 0 18px;
     line-height: 1.8;
     font-weight: 700;
   }
   h4 {
-    font-size: 21px;
+    font-size: 20px;
     margin: 29px 0 19px;
   }
   p {
     font-size: 16px;
     margin-top: 0;
-    margin-bottom: 13px;
+    margin-bottom: 12px;
   }
 }
 
