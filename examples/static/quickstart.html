@@ -1,47 +1,30 @@
-<h1 id="quickstart">QuickStart</h1>
-<p>Simpler Paper is a very simple and easy to use the document generator.  </p>
-<p>you only need to run a command, All of the Markdown will be automatically integrated into the site. </p>
-<h2 id="step-1-init">Step 1. Init</h2>
+<h2 id="quickstart">QuickStart</h2>
+<p>Simpler Paper is a very simple and easy to use the document generator.
+you only need to run a command, All of the Markdown will be automatically integrated into the site. </p>
+<h3 id="build-and-preview">Build and preview</h3>
+<p>with just one command, you can easily compile the file and the local preview.</p>
 <pre><code class="lang-bash"># install 
 npm install -g simpler-paper  
 
 # init  
 paper i
-</code></pre>
-<h2 id="step-2-build">Step 2. Build</h2>
-<blockquote>
-<p>Don&#39;t forget to add some markdown files.  </p>
-</blockquote>
-<p>Example:</p>
-<pre><code class="lang-html">
--------------   project dir
-|--- build
-|--- dist
-|--- scripts
-|--- docs    ==============     document directory
-|    |--- quickstart.md
-|    |--- hello.md
-|    |--- paper.config.json
-...
-</code></pre>
-<p>just run: </p>
-<pre><code class="lang-bash"># build to html
-paper build  
+
+# don&#39;t forget to add some markdown files.  
+# build to html
+paper build 
 
 # preview  
 paper s
 </code></pre>
-<h2 id="step-3-deploy">Step 3. Deploy</h2>
-<blockquote>
-<p>In default, the document will be released to github.    </p>
-</blockquote>
-<pre><code class="lang-bash">paper deploy
+<h3 id="deploy">Deploy</h3>
+<pre><code class="lang-bash"># In default, the document will be released to github.    
+paper deploy
 </code></pre>
-<h3 id="other-set-github-pages">Other. Set github pages</h3>
+<p>set github pages:</p>
 <ol>
 <li>go to your rep.</li>
 <li>Settings &gt; Options &gt; GitHub Pages  </li>
 <li>choose the source for <strong>gh-pages branch</strong></li>
 </ol>
-<p>Example:
-<img src="http://static.wittsay.cc/simpler-papergh-pages.png?imageView2/2/w/850/h/300/" alt="example"></p>
+<p>the actual effect:     </p>
+<p><img src="http://static.wittsay.cc/simpler-papergh-pages.png?imageView2/2/w/850/h/300/" alt="example"></p>

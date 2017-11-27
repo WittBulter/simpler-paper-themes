@@ -1,6 +1,6 @@
 {
   "name": "simpler-paper-themes",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "this rep generates themes for Simpler Paper",
   "main": "index.js",
   "scripts": {
