@@ -2,7 +2,7 @@
   width: 200px;
   position: fixed;
   left: 50px;
-  top: 35px;
+  top: 0;
   bottom: 0;
   background: #fff;
 }
@@ -12,12 +12,14 @@
   position: static;
   overflow-y: auto;
   overflow-x: hidden;
+  padding-bottom: 50px;
+  padding-top: 40px;
+  background: rgba(249, 249, 249, 0.45);
 
   & > ul {
     height: 100%;
     width: 100%;
     overflow: hidden;
-    padding-top: 20px;
 
     > li {
       padding-left: 30px;
@@ -35,7 +37,6 @@
 
   .side-title {
     color: #5e6d82;
-    margin-top: 15px;
     height: auto;
 
     h2 {
@@ -46,6 +47,8 @@
       line-height: 52px;
       border-bottom: 1px solid #EFF2F7;
       user-select: none;
+      font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica;
+      text-transform: uppercase;
     }
   }
 
