@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('./Rajdhani-Regular.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./Roboto-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+@import "../base";
+@import "common";

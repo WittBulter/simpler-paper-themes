@@ -78,6 +78,10 @@ module.exports = (async() => {
             ],
           }),
         },
+        {
+          test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
+          loader: 'url-loader?name=assets/[name].[hash].[ext]',
+        },
       ],
     },
   }
