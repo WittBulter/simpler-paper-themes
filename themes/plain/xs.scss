@@ -2,13 +2,13 @@
   .side-position {
     position: fixed;
     top: 0;
-    right: 0;
     left: 0;
-    height: auto;
+    right: 0;
     z-index: 100;
 
     #side {
       height: 45px;
+      z-index: 20;
       transition: all .25s ease-in-out;
       position: fixed;
       top: 0;
@@ -16,9 +16,10 @@
       left: 0;
       z-index: 20;
       padding: 0;
-      margin: 0;
+      width: 100%;
       background: #fafbfc;
       overflow: hidden;
+      display: block;
 
       &.active {
         height: 100vh;
@@ -26,6 +27,7 @@
         overflow-y: auto;
         overflow-x: hidden;
         padding-top: 45px;
+        visibility: visible;
 
         ul {
           visibility: visible;
@@ -34,6 +36,14 @@
 
       ul {
         visibility: hidden;
+        li {
+          width: 100%;
+          padding: 0;
+
+          p {
+            text-align: center;
+          }
+        }
       }
 
       .side-title {
@@ -47,13 +57,18 @@
       }
       h2 {
         line-height: 45px;
+        text-align: center;
       }
     }
-
   }
 
 
   .container-position {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+    padding: 0;
 
     #container {
       img {
@@ -86,7 +101,20 @@
       }
       blockquote {
         padding-left: 10px;
+        border-width: 5px;
+        background: linear-gradient(-45deg,transparent 4px,#f5f9fb 0);
+        p {
+          margin: 5px 0;
+        }
       }
+      pre {
+        padding: 5px 10px;
+        background: linear-gradient(-45deg,transparent 4px,#f5f9fb 0);
+      }
+    }
+
+    .container-inner {
+      margin: 0;
     }
 
   }

@@ -1,24 +1,37 @@
-.side-position {
-  width: 200px;
-  position: fixed;
-  left: 50px;
-  top: 0;
-  bottom: 0;
-  background: #fff;
+.main {
+  display: flex;
+  justify-content: space-between;
 }
 
-#side {
-  width: 100%;
+.side-position {
+  flex: 3;
+  background: #fff;
+  display: flex;
+  justify-content: flex-end;
+  height: 100vh;
   position: static;
   overflow-y: auto;
   overflow-x: hidden;
-  padding-bottom: 50px;
-  padding-top: 40px;
+
+  &::-webkit-scrollbar, &::-webkit-scrollbar-thumb {
+    display: none;
+    visibility: hidden;
+    width: 0;
+    background: transparent;
+  }
+}
+
+#side {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 240px;
+  margin-top: 40px;
   background: rgba(249, 249, 249, 0.45);
 
   & > ul {
     height: 100%;
     width: 100%;
+    padding-top: 15px;
     overflow: hidden;
 
     > li {
@@ -54,15 +67,6 @@
 
   a:hover {
     text-decoration: underline;
-  }
-
-  &::-webkit-scrollbar {
-    width: 4px;
-    background: #FAFBFC;
-  }
-  &::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    background: #f0f0f0;
   }
 }
 .sub-list-container {
@@ -118,19 +122,30 @@
 }
 
 .container-position {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  padding-top: 10px;
-  left: 250px;
+  flex: 10;
+  display: flex;
+  justify-content: flex-start;
   background: #fff;
+  position: static;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    background: #FAFBFC;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #f0f0f0;
+  }
 }
 
 #container {
   width: 100%;
   height: 100%;
-  position: static;
 
   p {
     color: #5e6d82;

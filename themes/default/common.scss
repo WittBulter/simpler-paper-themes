@@ -105,6 +105,17 @@
   left: 250px;
   height: 100%;
   position: static;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    background: #FAFBFC;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #f0f0f0;
+  }
 }
 
 .container-inner {
