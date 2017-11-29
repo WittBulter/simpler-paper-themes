@@ -7,6 +7,8 @@ module.exports = (async() => {
   const condig = await baseConfig
   return webpackMerge(condig, {
   
+    devtool: 'eval',
+  
     plugins: [
       new ExtractTextPlugin('[name].css'),
       
