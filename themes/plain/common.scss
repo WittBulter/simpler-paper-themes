@@ -104,15 +104,14 @@
 
   &.dir {
     text-transform: uppercase;
-    font-size: 15px;
     a {
-      color: #868686;
+      color: #d29898;
       text-decoration: none !important;
     }
     a:hover {
       &:before {
         content: '✱ ';
-        color: #67b7e8;
+        color: #d29898;
         line-height: 45px;
       }
     }
