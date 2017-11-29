@@ -1,4 +1,6 @@
 
+
+
 .side-position {
   width: 300px;
   position: fixed;
@@ -7,13 +9,12 @@
   bottom: 0;
   background: #FAFBFC;
   border-right: 3px solid #f1f1f1;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #side {
   width: 100%;
-  position: static;
-  overflow-y: auto;
-  overflow-x: hidden;
 
   & > ul {
     height: 100%;
@@ -98,13 +99,6 @@
   padding-top: 10px;
   left: 300px;
   background: #fff;
-}
-
-#container {
-  width: 100%;
-  left: 250px;
-  height: 100%;
-  position: static;
   overflow-y: auto;
   overflow-x: hidden;
 
@@ -116,6 +110,12 @@
     border-radius: 4px;
     background: #f0f0f0;
   }
+}
+
+#container {
+  width: 100%;
+  left: 250px;
+  height: 100%;
 }
 
 .container-inner {
