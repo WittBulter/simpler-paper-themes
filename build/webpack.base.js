@@ -20,7 +20,7 @@ const findAllModules = async() => {
 const findOneModules = async(dir) => {
   const exPath = `${themes}/${dir}`
   if (!await exists(exPath)) {
-    console.log('\ndir is not found!\ntry run [npm run server --dir={dir_name}]')
+    console.log('\ndir is not found!\ntry run [npm start --dir={dir_name}]')
     return process.exit(1)
   }
   if (!await exists(`${exPath}/index.scss`)) {
