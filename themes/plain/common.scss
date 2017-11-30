@@ -285,6 +285,50 @@
     }
   }
 
+  p.tips {
+    display: block;
+    background: #f6f9fb;
+    padding: 10px 8px 10px 20px;
+    word-break: break-all;
+    position: relative;
+
+    &::before, &::after {
+      position: absolute;
+      top: -1px;
+      bottom: -1px;
+      content: '';
+      width: 8px;
+      background: transparent;
+      border-top: 3px solid;
+      border-bottom: 3px solid;
+      z-index: 2;
+      border-color: #85cbef;
+    }
+    &::before {
+      left: 0;
+      border-left: 6px solid;
+    }
+    &::after {
+      right: 0;
+      border-right: 6px solid;
+    }
+    &.info {
+      &::before, &::after {
+        border-color: #85cbef;
+      }
+    }
+    &.warning {
+      &::before, &::after {
+        border-color: #efd9a8;
+      }
+    }
+    &.error {
+      &::before, &::after {
+        border-color: #e87e7a;
+      }
+    }
+  }
+
   table {
     tr {
       border: none;
