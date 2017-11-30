@@ -4,15 +4,15 @@ and in some cases you need only a few simple steps to achieve more customizing e
 <h3 id="multilayer-menu">Multilayer menu</h3>
 <p>if you want to create a menu that contains parent-child relationships, you just need to create folders.
 simpler-paper automatically generate menus based on hierarchical relationships.<br>like:   </p>
-<pre><code class="lang-html">**doc source**
-|____docs
-| |____install
-| | |____install.1.md
-| | |____install.2.md
-| |____problems
-| | |____answer.1.md
-| | |____answer.2.md
-| |____paper.config.json
+<pre><code class="lang-html"><span class="hljs-symbol">*</span><span class="hljs-symbol">*</span>doc source<span class="hljs-symbol">*</span><span class="hljs-symbol">*</span>
+|<span class="hljs-string">____docs
+</span>|<span class="hljs-string"> </span>|____install
+|<span class="hljs-string"> </span>|<span class="hljs-string"> </span>|<span class="hljs-string">____install.1.md
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string"> </span>|<span class="hljs-string">____install.2.md
+</span>|<span class="hljs-string"> </span>|____problems
+|<span class="hljs-string"> </span>|<span class="hljs-string"> </span>|<span class="hljs-string">____answer.1.md
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string"> </span>|<span class="hljs-string">____answer.2.md
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string">____paper.config.json</span>
 </code></pre>
 <p>run <code>paper bd</code> and get the following effect:<br><img src="http://static.wittsay.cc/simpler-paper-examples-1.png?imageView2/2/w/850/h/300/" alt="example1"></p>
 <p><br/>
@@ -20,15 +20,15 @@ simpler-paper automatically generate menus based on hierarchical relationships.<
 <h3 id="sort">Sort</h3>
 <p>both files and folders support manually specifying weights, you just need to add a prefix to them.
 prefixes are automatically removed after compilation.<br>like:   </p>
-<pre><code class="lang-html">**doc source**
-|____docs
-| |____install
-| | |____9_install.1.md
-| | |____5_install.2.md
-| |____problems
-| | |____answer.1.md
-| | |____answer.2.md
-| |____paper.config.json
+<pre><code class="lang-html"><span class="hljs-symbol">*</span><span class="hljs-symbol">*</span>doc source<span class="hljs-symbol">*</span><span class="hljs-symbol">*</span>
+|<span class="hljs-string">____docs
+</span>|<span class="hljs-string"> </span>|____install
+|<span class="hljs-string"> </span>|<span class="hljs-string"> </span>|<span class="hljs-string">____9_install.1.md
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string"> </span>|<span class="hljs-string">____5_install.2.md
+</span>|<span class="hljs-string"> </span>|____problems
+|<span class="hljs-string"> </span>|<span class="hljs-string"> </span>|<span class="hljs-string">____answer.1.md
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string"> </span>|<span class="hljs-string">____answer.2.md
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string">____paper.config.json</span>
 </code></pre>
 <p>run <code>paper bd</code> and get the following effect:    </p>
 <p><img src="http://static.wittsay.cc/simpler-paper-examples-2.png?imageView2/2/w/850/h/300/" alt="example2">  </p>
@@ -36,12 +36,12 @@ prefixes are automatically removed after compilation.<br>like:   </p>
 <br/></p>
 <h3 id="code-highlighting">Code highlighting</h3>
 <p>Adding <code>highlight.js</code> files and <code>highlight.css</code> files will automatically open the code highlighting<br>You can download and download these files here: <a href="https://highlightjs.org/download/">highlightjs</a></p>
-<pre><code class="lang-html">|____docs
-| |____paper.config.json
-| |____3_theme.md
-| |____4_features.md
-| |____1_quickstart.md
-| |____2_configuration.md
-| |____highlight.css
-| |____highlight.js
+<pre><code class="lang-html">|<span class="hljs-string">____docs
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string">____paper.config.json
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string">____3_theme.md
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string">____4_features.md
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string">____1_quickstart.md
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string">____2_configuration.md
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string">____highlight.css
+</span>|<span class="hljs-string"> </span>|<span class="hljs-string">____highlight.js</span>
 </code></pre>
