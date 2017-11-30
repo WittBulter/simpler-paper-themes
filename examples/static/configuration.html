@@ -3,40 +3,40 @@
 <blockquote>
 <p>run <code>paper init</code> can quickly create <code>paper.config.json</code></p>
 </blockquote>
-<p>Example: </p>
+<p>Example:</p>
 <pre><code class="lang-html">
 -------------   project dir
-|--- build
-|--- dist
-|--- scripts
-|--- docs
-|    |--- quickstart.md
-|    |--- hello.md
-|    |--- paper.config.json   (add paper.config.json in doc dir)
-...
+|<span class="hljs-string">--- build
+</span>|<span class="hljs-string">--- dist
+</span>|<span class="hljs-string">--- scripts
+</span>|<span class="hljs-string">--- docs
+</span>|<span class="hljs-string">    </span>|<span class="hljs-string">--- quickstart.md
+</span>|<span class="hljs-string">    </span>|<span class="hljs-string">--- hello.md
+</span>|<span class="hljs-string">    </span>|<span class="hljs-string">--- paper.config.json   (add paper.config.json in doc dir)
+...</span>
 </code></pre>
 <h3 id="step-2-improve-the-configuration-file">Step 2. improve the configuration file</h3>
 <pre><code class="lang-json">{
-  // document the alias, the value will be displayed after compilation, default: null
-  &quot;alias&quot;: {
-    &quot;quickstart&quot;: &quot;Getting Started&quot;
+  <span class="hljs-comment">// document the alias, the value will be displayed after compilation, default: null</span>
+  <span class="hljs-string">"alias"</span>: {
+    <span class="hljs-string">"quickstart"</span>: <span class="hljs-string">"Getting Started"</span>
     //...
   },
 
-  // document title, default: &quot;simpler paper&quot;
-  &quot;title&quot;: &quot;&quot;,
+  // document title, <span class="hljs-keyword">default</span>: <span class="hljs-string">"simpler paper"</span>
+  <span class="hljs-string">"title"</span>: <span class="hljs-string">""</span>,
 
-  // generate mini maps on the right side of each document, default: true
-  &quot;minimap&quot;: true,
+  // generate mini maps on the right side of each document, <span class="hljs-keyword">default</span>: <span class="hljs-keyword">true</span>
+  <span class="hljs-string">"minimap"</span>: <span class="hljs-keyword">true</span>,
 
-  // back to top button, default: true
-  &quot;backToTop&quot;: true,
+  // back to top button, <span class="hljs-keyword">default</span>: <span class="hljs-keyword">true</span>
+  <span class="hljs-string">"backToTop"</span>: <span class="hljs-keyword">true</span>,
 
-  // document page path, default: &quot;/&quot;
-  &quot;docPath&quot;: &quot;/&quot;,
+  // document page path, <span class="hljs-keyword">default</span>: <span class="hljs-string">"/"</span>
+  <span class="hljs-string">"docPath"</span>: <span class="hljs-string">"/"</span>,
 
-  // loading indicator, default: true
-  &quot;indicator&quot;: true
+  // loading indicator, <span class="hljs-keyword">default</span>: <span class="hljs-keyword">true</span>
+  <span class="hljs-string">"indicator"</span>: <span class="hljs-keyword">true</span>
 }
 </code></pre>
 <h3 id="all-properties">All Properties</h3>
