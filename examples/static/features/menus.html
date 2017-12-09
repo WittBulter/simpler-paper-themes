@@ -1,9 +1,8 @@
-<h2 id="features">Features</h2>
-<p><code>simpler-paper</code> contains a lot of conventions, 
-and in some cases you need only a few simple steps to achieve more customizing effects</p>
-<h3 id="multilayer-menu">Multilayer menu</h3>
+<h2 id="menu">Menu</h2>
+<h3 id="multilayer-menus">Multilayer Menus</h3>
 <p>if you want to create a menu that contains parent-child relationships, you just need to create folders.
-simpler-paper automatically generate menus based on hierarchical relationships.<br>like:   </p>
+simpler-paper automatically generate menus based on hierarchical relationships.
+like:</p>
 <pre><code class="lang-html"><span class="hljs-symbol">*</span><span class="hljs-symbol">*</span>doc source<span class="hljs-symbol">*</span><span class="hljs-symbol">*</span>
 |<span class="hljs-string">____docs
 </span>|<span class="hljs-string"> </span>|____install
@@ -14,12 +13,14 @@ simpler-paper automatically generate menus based on hierarchical relationships.<
 </span>|<span class="hljs-string"> </span>|<span class="hljs-string"> </span>|<span class="hljs-string">____answer.2.md
 </span>|<span class="hljs-string"> </span>|<span class="hljs-string">____paper.config.json</span>
 </code></pre>
-<p>run <code>paper bd</code> and get the following effect:<br><img src="http://static.wittsay.cc/simpler-paper-examples-1.png?imageView2/2/w/850/h/300/" alt="example1"></p>
+<p>run <code>paper bd</code> and get the following effect:</p>
+<p><img src="assets/example-multilayer-menu.png" alt="example1"></p>
 <p><br/>
 <br/></p>
-<h3 id="sort">Sort</h3>
+<h3 id="ordering">Ordering</h3>
 <p>both files and folders support manually specifying weights, you just need to add a prefix to them.
-prefixes are automatically removed after compilation.<br>like:   </p>
+prefixes are automatically removed after compilation.
+like:</p>
 <pre><code class="lang-html"><span class="hljs-symbol">*</span><span class="hljs-symbol">*</span>doc source<span class="hljs-symbol">*</span><span class="hljs-symbol">*</span>
 |<span class="hljs-string">____docs
 </span>|<span class="hljs-string"> </span>|____install
@@ -30,18 +31,7 @@ prefixes are automatically removed after compilation.<br>like:   </p>
 </span>|<span class="hljs-string"> </span>|<span class="hljs-string"> </span>|<span class="hljs-string">____answer.2.md
 </span>|<span class="hljs-string"> </span>|<span class="hljs-string">____paper.config.json</span>
 </code></pre>
-<p>run <code>paper bd</code> and get the following effect:    </p>
-<p><img src="http://static.wittsay.cc/simpler-paper-examples-2.png?imageView2/2/w/850/h/300/" alt="example2">  </p>
+<p>run <code>paper bd</code> and get the following effect:</p>
+<p><img src="assets/example-sort.png" alt="example2"></p>
 <p><br/>
 <br/></p>
-<h3 id="code-highlighting">Code highlighting</h3>
-<p>Adding <code>highlight.js</code> files and <code>highlight.css</code> files will automatically open the code highlighting<br>You can download and download these files here: <a href="https://highlightjs.org/download/">highlightjs</a></p>
-<pre><code class="lang-html">|<span class="hljs-string">____docs
-</span>|<span class="hljs-string"> </span>|<span class="hljs-string">____paper.config.json
-</span>|<span class="hljs-string"> </span>|<span class="hljs-string">____3_theme.md
-</span>|<span class="hljs-string"> </span>|<span class="hljs-string">____4_features.md
-</span>|<span class="hljs-string"> </span>|<span class="hljs-string">____1_quickstart.md
-</span>|<span class="hljs-string"> </span>|<span class="hljs-string">____2_configuration.md
-</span>|<span class="hljs-string"> </span>|<span class="hljs-string">____highlight.css
-</span>|<span class="hljs-string"> </span>|<span class="hljs-string">____highlight.js</span>
-</code></pre>
