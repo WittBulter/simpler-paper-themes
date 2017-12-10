@@ -25,7 +25,7 @@
   display: flex;
   flex-direction: column;
   flex-basis: 240px;
-  padding-top: 40px;
+  padding-top: 15px;
   background: rgba(249, 249, 249, 0.45);
 
   & > ul {
@@ -64,13 +64,11 @@
       text-transform: uppercase;
     }
   }
-
-  a:hover {
-    text-decoration: underline;
-  }
 }
+
 .sub-list-container {
 }
+
 .sub-list {
   height: 0;
   font-size: 15px;
