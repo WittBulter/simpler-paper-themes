@@ -137,8 +137,12 @@
   transition: all .25s ease-in-out;
 
   li {
-    padding-left: 15px;
+    padding-left: 10px;
     line-height: 40px;
+
+    p {
+      margin: 0;
+    }
   }
 }
 
