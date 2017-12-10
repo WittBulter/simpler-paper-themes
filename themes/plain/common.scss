@@ -242,7 +242,7 @@
     background: #f5f9fb;
     border: none;
     border-radius: 0;
-    background: linear-gradient(-45deg, transparent 9px, #f5f9fb 0);
+    background: linear-gradient(-45deg, transparent 5px, #f5f9fb 0);
     font-family: Consolas;
     line-height: 1.8;
 
@@ -274,15 +274,14 @@
 
   blockquote {
     background: #f5f9fb;
-    background: linear-gradient(-45deg, transparent 9px, #f5f9fb 0);
-    border-left: 10px solid #e6f4fb;
+    background: linear-gradient(-45deg, transparent 5px, #f5f9fb 0);
+    border-left: 8px solid #cee9f7;
     border-radius: 0;
     padding: 6px 15px;
     margin: 0;
 
     p {
-      font-size: 15px;
-      margin: 10px 0;
+      margin: 4px 0;
     }
     code {
       background: #FAFDFF;
@@ -293,7 +292,7 @@
   p.tips {
     display: block;
     background: #f6f9fb;
-    padding: 10px 8px 10px 20px;
+    padding: 8px 8px 8px 15px;
     word-break: break-all;
     position: relative;
 
@@ -425,7 +424,7 @@
 .back-to-top {
   position: fixed;
   bottom: 200px;
-  right: 280px;
+  right: 15%;
   width: 46px;
   height: 46px;
   border-radius: 50%;
