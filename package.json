@@ -1,11 +1,13 @@
 {
   "name": "simpler-paper-themes",
-  "version": "0.3.0-beta.2",
+  "version": "0.3.0-beta.3",
   "description": "this rep generates themes for Simpler Paper",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./build/webpack.dev.js --progress --watch --port 4001",
-    "build": "rm -rf ./dist && webpack --config ./build/webpack.prod.js --progress"
+    "build": "rm -rf ./dist && webpack --config ./build/webpack.prod.js --progress",
+    "commit": "node_modules/commitizen/bin/commitizen init cz-conventional-changelog --save --save-exact",
+    "commitmsg": "commitlint -e $GIT_PARAMS"
   },
   "repository": {
     "type": "git",
@@ -32,6 +34,11 @@
     "url-loader": "^0.6.2",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.4",
-    "webpack-merge": "^4.1.1"
+    "webpack-merge": "^4.1.1",
+    "@commitlint/config-angular": "^5.1.1",
+    "commitizen": "^2.9.6",
+    "commitlint": "^5.2.5",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^0.14.3"
   }
 }
