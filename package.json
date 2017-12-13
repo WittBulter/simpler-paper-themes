@@ -24,9 +24,14 @@
   },
   "homepage": "https://github.com/DhyanaChina/simpler-paper-themes#readme",
   "devDependencies": {
+    "@commitlint/config-angular": "^5.1.1",
+    "commitizen": "^2.9.6",
+    "commitlint": "^5.2.5",
     "css-loader": "^0.28.7",
+    "cz-conventional-changelog": "^2.1.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "^2.30.1",
+    "husky": "^0.14.3",
     "node-sass": "^4.6.0",
     "raw-loader": "^0.5.1",
     "sass-loader": "^6.0.6",
@@ -34,11 +39,11 @@
     "url-loader": "^0.6.2",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.4",
-    "webpack-merge": "^4.1.1",
-    "@commitlint/config-angular": "^5.1.1",
-    "commitizen": "^2.9.6",
-    "commitlint": "^5.2.5",
-    "cz-conventional-changelog": "^2.1.0",
-    "husky": "^0.14.3"
+    "webpack-merge": "^4.1.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
